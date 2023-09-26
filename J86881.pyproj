@@ -1,0 +1,61 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>d0e9c390-5e5f-466d-9104-4e4065423426</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>J86881.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>J86881</Name>
+    <RootNamespace>J86881</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="DateHelper.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ExportODS.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="J86881.py" />
+    <Compile Include="ODS.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ParseCSV.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ParseJSON.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ParseSQL.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProfitHelper.py">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="J86881.pdf" />
+    <Content Include="SalesCSV.csv" />
+    <Content Include="SalesJSON.json" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+  <!-- Uncomment the CoreCompile target to enable the Build command in
+       Visual Studio and specify your pre- and post-build commands in
+       the BeforeBuild and AfterBuild targets below. -->
+  <!--<Target Name="CoreCompile" />-->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+</Project>
